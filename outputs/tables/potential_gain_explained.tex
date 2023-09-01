@@ -1,0 +1,38 @@
+\begin{table*}
+    \begin{tabular}{l l l r}
+    \toprule
+    Paraphrase Group & Paraphrase Type & Model Output & ROUGE-L \\
+    \midrule
+    Extremes & Non-Paraphrase & Great Value & \hlgold{1.00} \\
+    Extremes & Entailment & Great Value & \hlgold{1.00} \\
+    Syntax & Negation Switching & Great Value Cat Food & \hlgreen{0.67} \\
+    Morphology & Modal Verb & Great Value Cat Food & \hlgreen{0.67} \\
+    Morphology & Derivational & Great Value Cat Food & \hlgreen{0.67} \\
+    Discourse & Direct/Indirect Style Alternations & Great Value Cat Food & \hlgreen{0.67} \\
+    Lexico-Syntax & Synthetic/Analytic Substitution & Great Value for Cats & \hlgreen{0.67} \\
+    Lexico-Syntax & Opp. Polarity Substitution (Habitual) & Great Value for Multiple Cats & \hlgreen{0.57} \\
+    Lexicon & Spelling & Great Value for Multiple Cats & \hlgreen{0.57} \\
+    Morphology & Inflectional & Good Value Cat Food & {0.33} \\
+    Original & Original & Good Value Cat Food & {0.33} \\
+    Discourse & Syntax/Discourse Structure & Good Value for Cats & {0.33} \\
+    Syntax & Subordination And Nesting & Purrfect Kitten Food & {0.00} \\
+    Others & Addition/Deletion & Kittens loved the food. & {0.00} \\
+    Discourse & Punctuation & Kittens loved the food & {0.00} \\
+    Others & Change Of Order & Cats love the food. & {0.00} \\
+    Extremes & Identity & Cats loved the food & {0.00} \\
+    Syntax & Coordination & Kittens Loved the Food & {0.00} \\
+    Syntax & Ellipsis & Good for Kittens & {0.00} \\
+    Syntax & Diathesis Alternation & Positive & {0.00} \\
+    Lexico-Syntax & Opp. Polarity Substitution (Contextual) & Good Quality Cat Food & {0.00} \\
+    Lexico-Syntax & Converse Substitution & Cats Loved Food & {0.00} \\
+    Lexicon & Same Polarity Sub. (Named Ent.) & Kittens loved the food. & {0.00} \\
+    Lexicon & Same Polarity Sub. (Habitual) & Perfect for Multiple Cats & {0.00} \\
+    Lexicon & Same Polarity Sub. (Contextual) & Multiple Cat Food & {0.00} \\
+    Lexicon & Change Of Format & Cats loved the food & {0.00} \\
+    Others & Semantic-Based & Cats loved the food & {0.00} \\
+    \bottomrule
+    \end{tabular}
+
+    \caption{This table demonstrates the potential gain in performance for the task meta-llama-Meta-Llama-3-8B-Instruct_task589_amazonfood_summary_text_generation. \hlgold{Max}: The highest-scoring paraphrase is highlighted in gold. \hlgreen{Mean} and \hlgreen{Median}: All scores above the original are highlighted in green, demonstrating improvement over the base prompt.}
+    \label{ap:potential_gain_explained}
+\end{table*}

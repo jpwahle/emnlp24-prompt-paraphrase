@@ -1,0 +1,74 @@
+Text Completion,20
+Question Answering,185
+Misc.,36
+Fill in The Blank,10
+Sentiment Analysis,54
+Word Analogy,8
+Program Execution,90
+Dialogue State Tracking,4
+Question Generation,76
+Text to Code,12
+Question Rewriting,11
+Summarization,16
+Cause Effect Classification,7
+Sentence Composition,20
+Question Decomposition,2
+Textual Entailment,24
+Word Relation Classification,5
+Named Entity Recognition,21
+Text Categorization,38
+Stereotype Detection,7
+Title Generation,18
+Language Identification,9
+Information Extraction,30
+Speaker Identification,9
+Answer Verification,7
+Wrong Candidate Generation,26
+Explanation,6
+Grammar Error Correction,2
+Commonsense Classification,24
+Ethics Classification,6
+Text Matching,29
+Word Semantics,10
+Question Understanding,15
+Story Composition,9
+Pos Tagging,9
+Stance Detection,2
+Text Quality Evaluation,12
+Section Classification,3
+Fact Verification,3
+Dialogue Act Recognition,7
+Gender Classification,7
+Dialogue Generation,13
+Sentence Expansion,1
+Intent Identification,5
+Text Simplification,4
+Negotiation Strategy Detection,7
+Mathematics,4
+Coreference Resolution,14
+Grammar Error Detection,3
+Number Conversion,2
+Punctuation Error Detection,1
+Paraphrasing,5
+Answerability Classification,13
+Data to Text,9
+Discourse Connective Identification,1
+Linguistic Probing,9
+Sentence Ordering,5
+Discourse Relation Classification,1
+Code to Text,4
+Sentence Perturbation,4
+Entity Relation Classification,1
+Overlap Extraction,2
+Translation,2
+Style Transfer,2
+Irony Detection,2
+Spelling Error Detection,1
+Entity Generation,1
+Speaker Relation Classification,2
+Keyword Tagging,5
+Coherence Classification,6
+Preposition Prediction,1
+Spam Classification,1
+Poem Generation,1
+Sentence Compression,1

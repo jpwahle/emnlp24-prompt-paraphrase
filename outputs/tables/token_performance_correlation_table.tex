@@ -1,0 +1,369 @@
+\begin{table}
+\caption{Pearson correlations between deviation metrics and downstream task performance}
+\begin{tabular}{ccccc}
+\toprule
+Model & Task & Metric & Correlation & P-value \\
+\midrule
+llama-3-70b-instruct & Title Generation & deviation_token_count & 0.02 & 0.07 \\
+llama-3-70b-instruct & Title Generation & deviation_wpd & 0.02 & 0.12 \\
+llama-3-70b-instruct & Title Generation & deviation_ld & 0.02 & 0.17 \\
+llama-3-70b-instruct & Text Completion & deviation_token_count & 0.02 & 0.1 \\
+llama-3-70b-instruct & Text Completion & deviation_wpd & 0.03* & 0.05 \\
+llama-3-70b-instruct & Text Completion & deviation_ld & 0.02 & 0.22 \\
+llama-3-70b-instruct & Question Rewriting & deviation_token_count & 0.12* & 0.0 \\
+llama-3-70b-instruct & Question Rewriting & deviation_wpd & 0.12* & 0.0 \\
+llama-3-70b-instruct & Question Rewriting & deviation_ld & 0.12* & 0.0 \\
+llama-3-70b-instruct & Program Execution & deviation_token_count & -0.01 & 0.34 \\
+llama-3-70b-instruct & Program Execution & deviation_wpd & -0.02 & 0.15 \\
+llama-3-70b-instruct & Program Execution & deviation_ld & -0.02 & 0.07 \\
+llama-3-70b-instruct & Answerability Classification & deviation_token_count & -0.04* & 0.01 \\
+llama-3-70b-instruct & Answerability Classification & deviation_wpd & -0.02 & 0.2 \\
+llama-3-70b-instruct & Answerability Classification & deviation_ld & -0.01 & 0.29 \\
+llama-3-70b-instruct & Question Understanding & deviation_token_count & -0.02 & 0.11 \\
+llama-3-70b-instruct & Question Understanding & deviation_wpd & 0.01 & 0.28 \\
+llama-3-70b-instruct & Question Understanding & deviation_ld & 0.01 & 0.43 \\
+llama-3-70b-instruct & Program Execution & deviation_token_count & -0.03* & 0.05 \\
+llama-3-70b-instruct & Program Execution & deviation_wpd & -0.02 & 0.08 \\
+llama-3-70b-instruct & Program Execution & deviation_ld & -0.03 & 0.05 \\
+llama-3-70b-instruct & Title Generation & deviation_token_count & 0.05* & 0.0 \\
+llama-3-70b-instruct & Title Generation & deviation_wpd & 0.05* & 0.0 \\
+llama-3-70b-instruct & Title Generation & deviation_ld & 0.05* & 0.0 \\
+llama-3-70b-instruct & Question Answering & deviation_token_count & -0.02 & 0.18 \\
+llama-3-70b-instruct & Question Answering & deviation_wpd & -0.02 & 0.17 \\
+llama-3-70b-instruct & Question Answering & deviation_ld & -0.02 & 0.14 \\
+llama-3-70b-instruct & Summarization & deviation_token_count & 0.04* & 0.01 \\
+llama-3-70b-instruct & Summarization & deviation_wpd & 0.03* & 0.03 \\
+llama-3-70b-instruct & Summarization & deviation_ld & 0.02 & 0.16 \\
+llama-3-70b-instruct & Sentence Composition & deviation_token_count & 0.03* & 0.01 \\
+llama-3-70b-instruct & Sentence Composition & deviation_wpd & 0.02 & 0.14 \\
+llama-3-70b-instruct & Sentence Composition & deviation_ld & 0.03* & 0.03 \\
+llama-3-70b-instruct & Text Categorization & deviation_token_count & -0.01 & 0.51 \\
+llama-3-70b-instruct & Text Categorization & deviation_wpd & -0.0 & 0.89 \\
+llama-3-70b-instruct & Text Categorization & deviation_ld & -0.01 & 0.65 \\
+llama-3-70b-instruct & Coreference Resolution & deviation_token_count & -0.03 & 0.06 \\
+llama-3-70b-instruct & Coreference Resolution & deviation_wpd & -0.02 & 0.19 \\
+llama-3-70b-instruct & Coreference Resolution & deviation_ld & 0.03 & 0.06 \\
+llama-3-70b-instruct & Named Entity Recognition & deviation_token_count & -0.02 & 0.24 \\
+llama-3-70b-instruct & Named Entity Recognition & deviation_wpd & -0.01 & 0.34 \\
+llama-3-70b-instruct & Named Entity Recognition & deviation_ld & -0.01 & 0.39 \\
+llama-3-70b-instruct & Word Semantics & deviation_token_count & -0.02 & 0.16 \\
+llama-3-70b-instruct & Word Semantics & deviation_wpd & -0.02 & 0.09 \\
+llama-3-70b-instruct & Word Semantics & deviation_ld & 0.02 & 0.09 \\
+llama-3-70b-instruct & Named Entity Recognition & deviation_token_count & -0.09* & 0.0 \\
+llama-3-70b-instruct & Named Entity Recognition & deviation_wpd & -0.12* & 0.0 \\
+llama-3-70b-instruct & Named Entity Recognition & deviation_ld & -0.09* & 0.0 \\
+llama-3-70b-instruct & Text to Code & deviation_token_count & 0.02 & 0.27 \\
+llama-3-70b-instruct & Text to Code & deviation_wpd & 0.02 & 0.07 \\
+llama-3-70b-instruct & Text to Code & deviation_ld & 0.04* & 0.01 \\
+llama-3-70b-instruct & Commonsense Classification & deviation_token_count & -0.06* & 0.0 \\
+llama-3-70b-instruct & Commonsense Classification & deviation_wpd & -0.07* & 0.0 \\
+llama-3-70b-instruct & Commonsense Classification & deviation_ld & -0.06* & 0.0 \\
+llama-3-70b-instruct & Sentiment Analysis & deviation_token_count & 0.06* & 0.0 \\
+llama-3-70b-instruct & Sentiment Analysis & deviation_wpd & 0.07* & 0.0 \\
+llama-3-70b-instruct & Sentiment Analysis & deviation_ld & 0.06* & 0.0 \\
+llama-3-70b-instruct & Question Answering & deviation_token_count & 0.09* & 0.0 \\
+llama-3-70b-instruct & Question Answering & deviation_wpd & 0.09* & 0.0 \\
+llama-3-70b-instruct & Question Answering & deviation_ld & 0.08* & 0.0 \\
+llama-3-70b-instruct & Summarization & deviation_token_count & 0.09* & 0.0 \\
+llama-3-70b-instruct & Summarization & deviation_wpd & 0.1* & 0.0 \\
+llama-3-70b-instruct & Summarization & deviation_ld & 0.09* & 0.0 \\
+llama-3-70b-instruct & Text Completion & deviation_token_count & 0.01 & 0.35 \\
+llama-3-70b-instruct & Text Completion & deviation_wpd & 0.01 & 0.42 \\
+llama-3-70b-instruct & Text Completion & deviation_ld & 0.01 & 0.42 \\
+llama-3-70b-instruct & Wrong Candidate Generation & deviation_token_count & 0.06* & 0.0 \\
+llama-3-70b-instruct & Wrong Candidate Generation & deviation_wpd & 0.08* & 0.0 \\
+llama-3-70b-instruct & Wrong Candidate Generation & deviation_ld & 0.04* & 0.0 \\
+llama-3-70b-instruct & Fill in The Blank & deviation_token_count & 0.06* & 0.0 \\
+llama-3-70b-instruct & Fill in The Blank & deviation_wpd & 0.05* & 0.0 \\
+llama-3-70b-instruct & Fill in The Blank & deviation_ld & 0.04* & 0.0 \\
+llama-3-70b-instruct & Question Generation & deviation_token_count & -0.01 & 0.66 \\
+llama-3-70b-instruct & Question Generation & deviation_wpd & -0.01 & 0.53 \\
+llama-3-70b-instruct & Question Generation & deviation_ld & 0.01 & 0.55 \\
+llama-3-70b-instruct & Information Extraction & deviation_token_count & -0.04* & 0.04 \\
+llama-3-70b-instruct & Information Extraction & deviation_wpd & 0.04* & 0.03 \\
+llama-3-70b-instruct & Information Extraction & deviation_ld & -0.02 & 0.33 \\
+llama-3-70b-instruct & Text Quality Evaluation & deviation_token_count & -0.02 & 0.16 \\
+llama-3-70b-instruct & Text Quality Evaluation & deviation_wpd & -0.02 & 0.15 \\
+llama-3-70b-instruct & Text Quality Evaluation & deviation_ld & -0.02 & 0.17 \\
+llama-3-70b-instruct & Sentence Composition & deviation_token_count & 0.02 & 0.11 \\
+llama-3-70b-instruct & Sentence Composition & deviation_wpd & 0.02 & 0.11 \\
+llama-3-70b-instruct & Sentence Composition & deviation_ld & 0.02 & 0.09 \\
+llama-3-70b-instruct & Text Matching & deviation_token_count & 0.05* & 0.0 \\
+llama-3-70b-instruct & Text Matching & deviation_wpd & 0.08* & 0.0 \\
+llama-3-70b-instruct & Text Matching & deviation_ld & 0.07* & 0.0 \\
+llama-3-70b-instruct & Title Generation & deviation_token_count & -0.01 & 0.44 \\
+llama-3-70b-instruct & Title Generation & deviation_wpd & -0.01 & 0.42 \\
+llama-3-70b-instruct & Title Generation & deviation_ld & -0.0 & 0.84 \\
+llama-3-70b-instruct & Question Understanding & deviation_token_count & 0.04* & 0.01 \\
+llama-3-70b-instruct & Question Understanding & deviation_wpd & -0.01 & 0.31 \\
+llama-3-70b-instruct & Question Understanding & deviation_ld & -0.04* & 0.0 \\
+llama-3-70b-instruct & Question Understanding & deviation_token_count & -0.06* & 0.0 \\
+llama-3-70b-instruct & Question Understanding & deviation_wpd & -0.08* & 0.0 \\
+llama-3-70b-instruct & Question Understanding & deviation_ld & -0.08* & 0.0 \\
+llama-3-70b-instruct & Wrong Candidate Generation & deviation_token_count & 0.09* & 0.0 \\
+llama-3-70b-instruct & Wrong Candidate Generation & deviation_wpd & 0.13* & 0.0 \\
+llama-3-70b-instruct & Wrong Candidate Generation & deviation_ld & 0.06* & 0.0 \\
+llama-3-70b-instruct & Text Quality Evaluation & deviation_token_count & -0.0 & 0.83 \\
+llama-3-70b-instruct & Text Quality Evaluation & deviation_wpd & -0.02 & 0.17 \\
+llama-3-70b-instruct & Text Quality Evaluation & deviation_ld & -0.01 & 0.33 \\
+llama-3-70b-instruct & Fill in The Blank & deviation_token_count & 0.07* & 0.0 \\
+llama-3-70b-instruct & Fill in The Blank & deviation_wpd & 0.06* & 0.0 \\
+llama-3-70b-instruct & Fill in The Blank & deviation_ld & 0.06* & 0.0 \\
+llama-3-70b-instruct & Summarization & deviation_token_count & 0.09* & 0.0 \\
+llama-3-70b-instruct & Summarization & deviation_wpd & 0.08* & 0.0 \\
+llama-3-70b-instruct & Summarization & deviation_ld & 0.08* & 0.0 \\
+llama-3-70b-instruct & Text Matching & deviation_token_count & -0.04* & 0.01 \\
+llama-3-70b-instruct & Text Matching & deviation_wpd & -0.01 & 0.51 \\
+llama-3-70b-instruct & Text Matching & deviation_ld & -0.04* & 0.0 \\
+llama-3-70b-instruct & Named Entity Recognition & deviation_token_count & 0.17* & 0.0 \\
+llama-3-70b-instruct & Named Entity Recognition & deviation_wpd & 0.19* & 0.0 \\
+llama-3-70b-instruct & Named Entity Recognition & deviation_ld & 0.18* & 0.0 \\
+llama-3-70b-instruct & Information Extraction & deviation_token_count & 0.01 & 0.33 \\
+llama-3-70b-instruct & Information Extraction & deviation_wpd & 0.02 & 0.18 \\
+llama-3-70b-instruct & Information Extraction & deviation_ld & 0.01 & 0.61 \\
+llama-3-70b-instruct & Text Completion & deviation_token_count & 0.03* & 0.04 \\
+llama-3-70b-instruct & Text Completion & deviation_wpd & 0.03* & 0.03 \\
+llama-3-70b-instruct & Text Completion & deviation_ld & 0.05* & 0.0 \\
+llama-3-70b-instruct & Question Generation & deviation_token_count & -0.04* & 0.05 \\
+llama-3-70b-instruct & Question Generation & deviation_wpd & -0.04* & 0.03 \\
+llama-3-70b-instruct & Question Generation & deviation_ld & -0.04* & 0.02 \\
+llama-3-70b-instruct & Word Semantics & deviation_token_count & -0.01 & 0.47 \\
+llama-3-70b-instruct & Word Semantics & deviation_wpd & -0.03* & 0.04 \\
+llama-3-70b-instruct & Word Semantics & deviation_ld & -0.01 & 0.29 \\
+llama-3-70b-instruct & Question Generation & deviation_token_count & 0.06* & 0.0 \\
+llama-3-70b-instruct & Question Generation & deviation_wpd & 0.07* & 0.0 \\
+llama-3-70b-instruct & Question Generation & deviation_ld & 0.07* & 0.0 \\
+llama-3-70b-instruct & Title Generation & deviation_token_count & -0.02 & 0.12 \\
+llama-3-70b-instruct & Title Generation & deviation_wpd & -0.03* & 0.03 \\
+llama-3-70b-instruct & Title Generation & deviation_ld & -0.03* & 0.02 \\
+llama-3-70b-instruct & Wrong Candidate Generation & deviation_token_count & -0.02 & 0.18 \\
+llama-3-70b-instruct & Wrong Candidate Generation & deviation_wpd & -0.01 & 0.39 \\
+llama-3-70b-instruct & Wrong Candidate Generation & deviation_ld & -0.03* & 0.05 \\
+llama-3-70b-instruct & Coreference Resolution & deviation_token_count & 0.02 & 0.15 \\
+llama-3-70b-instruct & Coreference Resolution & deviation_wpd & 0.02 & 0.22 \\
+llama-3-70b-instruct & Coreference Resolution & deviation_ld & 0.01 & 0.65 \\
+llama-3-70b-instruct & Commonsense Classification & deviation_token_count & 0.03* & 0.04 \\
+llama-3-70b-instruct & Commonsense Classification & deviation_wpd & 0.03* & 0.02 \\
+llama-3-70b-instruct & Commonsense Classification & deviation_ld & 0.02 & 0.15 \\
+llama-3-70b-instruct & Dialogue Generation & deviation_token_count & 0.01 & 0.65 \\
+llama-3-70b-instruct & Dialogue Generation & deviation_wpd & 0.01 & 0.41 \\
+llama-3-70b-instruct & Dialogue Generation & deviation_ld & 0.02 & 0.25 \\
+llama-3-70b-instruct & Word Semantics & deviation_token_count & -0.04* & 0.0 \\
+llama-3-70b-instruct & Word Semantics & deviation_wpd & -0.05* & 0.0 \\
+llama-3-70b-instruct & Word Semantics & deviation_ld & -0.05* & 0.0 \\
+llama-3-70b-instruct & Information Extraction & deviation_token_count & -0.01 & 0.29 \\
+llama-3-70b-instruct & Information Extraction & deviation_wpd & -0.01 & 0.29 \\
+llama-3-70b-instruct & Information Extraction & deviation_ld & -0.01 & 0.28 \\
+llama-3-70b-instruct & Program Execution & deviation_token_count & -0.07* & 0.0 \\
+llama-3-70b-instruct & Program Execution & deviation_wpd & -0.03* & 0.02 \\
+llama-3-70b-instruct & Program Execution & deviation_ld & -0.08* & 0.0 \\
+llama-3-70b-instruct & Word Semantics & deviation_token_count & -0.07* & 0.0 \\
+llama-3-70b-instruct & Word Semantics & deviation_wpd & -0.08* & 0.0 \\
+llama-3-70b-instruct & Word Semantics & deviation_ld & -0.08* & 0.0 \\
+llama-3-70b-instruct & Question Rewriting & deviation_token_count & 0.01 & 0.4 \\
+llama-3-70b-instruct & Question Rewriting & deviation_wpd & 0.01 & 0.52 \\
+llama-3-70b-instruct & Question Rewriting & deviation_ld & -0.02 & 0.11 \\
+llama-3-70b-instruct & Question Understanding & deviation_token_count & -0.06* & 0.0 \\
+llama-3-70b-instruct & Question Understanding & deviation_wpd & -0.12* & 0.0 \\
+llama-3-70b-instruct & Question Understanding & deviation_ld & -0.05* & 0.0 \\
+llama-3-70b-instruct & Text Quality Evaluation & deviation_token_count & -0.01 & 0.51 \\
+llama-3-70b-instruct & Text Quality Evaluation & deviation_wpd & -0.0 & 0.98 \\
+llama-3-70b-instruct & Text Quality Evaluation & deviation_ld & -0.0 & 0.88 \\
+llama-3-70b-instruct & Information Extraction & deviation_token_count & 0.24* & 0.0 \\
+llama-3-70b-instruct & Information Extraction & deviation_wpd & 0.28* & 0.0 \\
+llama-3-70b-instruct & Information Extraction & deviation_ld & 0.27* & 0.0 \\
+llama-3-70b-instruct & Commonsense Classification & deviation_token_count & -0.06* & 0.0 \\
+llama-3-70b-instruct & Commonsense Classification & deviation_wpd & -0.04* & 0.0 \\
+llama-3-70b-instruct & Commonsense Classification & deviation_ld & -0.05* & 0.0 \\
+llama-3-70b-instruct & Textual Entailment & deviation_token_count & 0.06* & 0.0 \\
+llama-3-70b-instruct & Textual Entailment & deviation_wpd & 0.04* & 0.0 \\
+llama-3-70b-instruct & Textual Entailment & deviation_ld & 0.08* & 0.0 \\
+llama-3-70b-instruct & Text to Code & deviation_token_count & -0.0 & 0.99 \\
+llama-3-70b-instruct & Text to Code & deviation_wpd & 0.0 & 0.76 \\
+llama-3-70b-instruct & Text to Code & deviation_ld & 0.01 & 0.51 \\
+llama-3-70b-instruct & Text to Code & deviation_token_count & -0.06* & 0.0 \\
+llama-3-70b-instruct & Text to Code & deviation_wpd & 0.01 & 0.44 \\
+llama-3-70b-instruct & Text to Code & deviation_ld & 0.03* & 0.03 \\
+llama-3-70b-instruct & Word Semantics & deviation_token_count & 0.05* & 0.0 \\
+llama-3-70b-instruct & Word Semantics & deviation_wpd & 0.04* & 0.0 \\
+llama-3-70b-instruct & Word Semantics & deviation_ld & 0.05* & 0.0 \\
+llama-3-70b-instruct & Program Execution & deviation_token_count & 0.0 & 0.9 \\
+llama-3-70b-instruct & Program Execution & deviation_wpd & 0.01 & 0.39 \\
+llama-3-70b-instruct & Program Execution & deviation_ld & 0.0 & 0.91 \\
+llama-3-70b-instruct & Coreference Resolution & deviation_token_count & -0.06* & 0.0 \\
+llama-3-70b-instruct & Coreference Resolution & deviation_wpd & -0.06* & 0.0 \\
+llama-3-70b-instruct & Coreference Resolution & deviation_ld & -0.06* & 0.0 \\
+llama-3-70b-instruct & Wrong Candidate Generation & deviation_token_count & -0.02 & 0.23 \\
+llama-3-70b-instruct & Wrong Candidate Generation & deviation_wpd & -0.01 & 0.38 \\
+llama-3-70b-instruct & Wrong Candidate Generation & deviation_ld & 0.0 & 0.95 \\
+llama-3-70b-instruct & Question Generation & deviation_token_count & 0.03* & 0.01 \\
+llama-3-70b-instruct & Question Generation & deviation_wpd & 0.03* & 0.01 \\
+llama-3-70b-instruct & Question Generation & deviation_ld & 0.05* & 0.0 \\
+llama-3-70b-instruct & Text Matching & deviation_token_count & -0.09* & 0.0 \\
+llama-3-70b-instruct & Text Matching & deviation_wpd & -0.09* & 0.0 \\
+llama-3-70b-instruct & Text Matching & deviation_ld & -0.09* & 0.0 \\
+llama-3-70b-instruct & Summarization & deviation_token_count & 0.16* & 0.0 \\
+llama-3-70b-instruct & Summarization & deviation_wpd & 0.15* & 0.0 \\
+llama-3-70b-instruct & Summarization & deviation_ld & 0.16* & 0.0 \\
+llama-3-70b-instruct & Sentiment Analysis & deviation_token_count & 0.04* & 0.01 \\
+llama-3-70b-instruct & Sentiment Analysis & deviation_wpd & 0.05* & 0.0 \\
+llama-3-70b-instruct & Sentiment Analysis & deviation_ld & 0.04* & 0.0 \\
+llama-3-70b-instruct & Commonsense Classification & deviation_token_count & 0.05* & 0.0 \\
+llama-3-70b-instruct & Commonsense Classification & deviation_wpd & 0.06* & 0.0 \\
+llama-3-70b-instruct & Commonsense Classification & deviation_ld & 0.06* & 0.0 \\
+llama-3-70b-instruct & Text Categorization & deviation_token_count & 0.01 & 0.66 \\
+llama-3-70b-instruct & Text Categorization & deviation_wpd & 0.01 & 0.7 \\
+llama-3-70b-instruct & Text Categorization & deviation_ld & 0.01 & 0.74 \\
+llama-3-70b-instruct & Sentiment Analysis & deviation_token_count & -0.04* & 0.0 \\
+llama-3-70b-instruct & Sentiment Analysis & deviation_wpd & -0.03* & 0.01 \\
+llama-3-70b-instruct & Sentiment Analysis & deviation_ld & -0.01 & 0.55 \\
+llama-3-70b-instruct & Text Quality Evaluation & deviation_token_count & 0.02 & 0.27 \\
+llama-3-70b-instruct & Text Quality Evaluation & deviation_wpd & 0.02 & 0.11 \\
+llama-3-70b-instruct & Text Quality Evaluation & deviation_ld & 0.01 & 0.48 \\
+llama-3-70b-instruct & Fill in The Blank & deviation_token_count & 0.04* & 0.01 \\
+llama-3-70b-instruct & Fill in The Blank & deviation_wpd & 0.04* & 0.01 \\
+llama-3-70b-instruct & Fill in The Blank & deviation_ld & 0.04* & 0.01 \\
+llama-3-70b-instruct & Text to Code & deviation_token_count & -0.06* & 0.0 \\
+llama-3-70b-instruct & Text to Code & deviation_wpd & -0.07* & 0.0 \\
+llama-3-70b-instruct & Text to Code & deviation_ld & -0.04* & 0.0 \\
+llama-3-70b-instruct & Text to Code & deviation_token_count & -0.01 & 0.33 \\
+llama-3-70b-instruct & Text to Code & deviation_wpd & -0.01 & 0.49 \\
+llama-3-70b-instruct & Text to Code & deviation_ld & -0.01 & 0.42 \\
+llama-3-70b-instruct & Dialogue Generation & deviation_token_count & -0.03 & 0.06 \\
+llama-3-70b-instruct & Dialogue Generation & deviation_wpd & -0.02 & 0.11 \\
+llama-3-70b-instruct & Dialogue Generation & deviation_ld & -0.03* & 0.02 \\
+llama-3-70b-instruct & Question Answering & deviation_token_count & 0.04* & 0.03 \\
+llama-3-70b-instruct & Question Answering & deviation_wpd & 0.05* & 0.0 \\
+llama-3-70b-instruct & Question Answering & deviation_ld & 0.05* & 0.01 \\
+llama-3-70b-instruct & Question Rewriting & deviation_token_count & 0.01 & 0.45 \\
+llama-3-70b-instruct & Question Rewriting & deviation_wpd & 0.01 & 0.29 \\
+llama-3-70b-instruct & Question Rewriting & deviation_ld & 0.0 & 0.97 \\
+llama-3-70b-instruct & Textual Entailment & deviation_token_count & 0.07* & 0.0 \\
+llama-3-70b-instruct & Textual Entailment & deviation_wpd & 0.05* & 0.0 \\
+llama-3-70b-instruct & Textual Entailment & deviation_ld & 0.06* & 0.0 \\
+llama-3-70b-instruct & Sentence Composition & deviation_token_count & 0.21* & 0.0 \\
+llama-3-70b-instruct & Sentence Composition & deviation_wpd & 0.23* & 0.0 \\
+llama-3-70b-instruct & Sentence Composition & deviation_ld & 0.23* & 0.0 \\
+llama-3-70b-instruct & Fill in The Blank & deviation_token_count & 0.05* & 0.0 \\
+llama-3-70b-instruct & Fill in The Blank & deviation_wpd & 0.05* & 0.0 \\
+llama-3-70b-instruct & Fill in The Blank & deviation_ld & 0.06* & 0.0 \\
+llama-3-70b-instruct & Summarization & deviation_token_count & 0.04* & 0.0 \\
+llama-3-70b-instruct & Summarization & deviation_wpd & 0.05* & 0.0 \\
+llama-3-70b-instruct & Summarization & deviation_ld & 0.04* & 0.0 \\
+llama-3-70b-instruct & Dialogue Generation & deviation_token_count & 0.03* & 0.02 \\
+llama-3-70b-instruct & Dialogue Generation & deviation_wpd & 0.03* & 0.02 \\
+llama-3-70b-instruct & Dialogue Generation & deviation_ld & 0.04* & 0.0 \\
+llama-3-70b-instruct & Commonsense Classification & deviation_token_count & 0.0 & 0.72 \\
+llama-3-70b-instruct & Commonsense Classification & deviation_wpd & -0.02 & 0.16 \\
+llama-3-70b-instruct & Commonsense Classification & deviation_ld & 0.01 & 0.55 \\
+llama-3-70b-instruct & Question Rewriting & deviation_token_count & 0.01 & 0.46 \\
+llama-3-70b-instruct & Question Rewriting & deviation_wpd & 0.02 & 0.07 \\
+llama-3-70b-instruct & Question Rewriting & deviation_ld & 0.05* & 0.0 \\
+llama-3-70b-instruct & Text Categorization & deviation_token_count & -0.11* & 0.0 \\
+llama-3-70b-instruct & Text Categorization & deviation_wpd & -0.1* & 0.0 \\
+llama-3-70b-instruct & Text Categorization & deviation_ld & -0.1* & 0.0 \\
+llama-3-70b-instruct & Text Completion & deviation_token_count & -0.01 & 0.53 \\
+llama-3-70b-instruct & Text Completion & deviation_wpd & -0.01 & 0.71 \\
+llama-3-70b-instruct & Text Completion & deviation_ld & -0.02 & 0.2 \\
+llama-3-70b-instruct & Question Generation & deviation_token_count & 0.28* & 0.0 \\
+llama-3-70b-instruct & Question Generation & deviation_wpd & 0.24* & 0.0 \\
+llama-3-70b-instruct & Question Generation & deviation_ld & 0.2* & 0.0 \\
+llama-3-70b-instruct & Named Entity Recognition & deviation_token_count & -0.07* & 0.0 \\
+llama-3-70b-instruct & Named Entity Recognition & deviation_wpd & -0.04* & 0.0 \\
+llama-3-70b-instruct & Named Entity Recognition & deviation_ld & -0.06* & 0.0 \\
+llama-3-70b-instruct & Question Answering & deviation_token_count & 0.47* & 0.0 \\
+llama-3-70b-instruct & Question Answering & deviation_wpd & 0.44* & 0.0 \\
+llama-3-70b-instruct & Question Answering & deviation_ld & 0.42* & 0.0 \\
+llama-3-70b-instruct & Question Understanding & deviation_token_count & 0.03* & 0.02 \\
+llama-3-70b-instruct & Question Understanding & deviation_wpd & 0.04* & 0.01 \\
+llama-3-70b-instruct & Question Understanding & deviation_ld & 0.05* & 0.0 \\
+llama-3-70b-instruct & Title Generation & deviation_token_count & -0.0 & 0.96 \\
+llama-3-70b-instruct & Title Generation & deviation_wpd & -0.0 & 0.74 \\
+llama-3-70b-instruct & Title Generation & deviation_ld & -0.01 & 0.45 \\
+llama-3-70b-instruct & Unknown Category & deviation_token_count & -0.09* & 0.0 \\
+llama-3-70b-instruct & Unknown Category & deviation_wpd & -0.1* & 0.0 \\
+llama-3-70b-instruct & Unknown Category & deviation_ld & -0.09* & 0.0 \\
+llama-3-70b-instruct & Coreference Resolution & deviation_token_count & 0.08* & 0.0 \\
+llama-3-70b-instruct & Coreference Resolution & deviation_wpd & 0.08* & 0.0 \\
+llama-3-70b-instruct & Coreference Resolution & deviation_ld & 0.08* & 0.0 \\
+llama-3-70b-instruct & Coreference Resolution & deviation_token_count & -0.02 & 0.08 \\
+llama-3-70b-instruct & Coreference Resolution & deviation_wpd & -0.02 & 0.09 \\
+llama-3-70b-instruct & Coreference Resolution & deviation_ld & -0.05* & 0.0 \\
+llama-3-70b-instruct & Dialogue Generation & deviation_token_count & 0.04* & 0.0 \\
+llama-3-70b-instruct & Dialogue Generation & deviation_wpd & 0.05* & 0.0 \\
+llama-3-70b-instruct & Dialogue Generation & deviation_ld & 0.06* & 0.0 \\
+llama-3-70b-instruct & Sentiment Analysis & deviation_token_count & 0.03 & 0.05 \\
+llama-3-70b-instruct & Sentiment Analysis & deviation_wpd & 0.04* & 0.0 \\
+llama-3-70b-instruct & Sentiment Analysis & deviation_ld & 0.04* & 0.0 \\
+llama-3-70b-instruct & Fill in The Blank & deviation_token_count & -0.01 & 0.43 \\
+llama-3-70b-instruct & Fill in The Blank & deviation_wpd & -0.01 & 0.41 \\
+llama-3-70b-instruct & Fill in The Blank & deviation_ld & -0.01 & 0.39 \\
+llama-3-70b-instruct & Answerability Classification & deviation_token_count & -0.04* & 0.0 \\
+llama-3-70b-instruct & Answerability Classification & deviation_wpd & -0.06* & 0.0 \\
+llama-3-70b-instruct & Answerability Classification & deviation_ld & -0.05* & 0.0 \\
+llama-3-70b-instruct & Wrong Candidate Generation & deviation_token_count & -0.08* & 0.0 \\
+llama-3-70b-instruct & Wrong Candidate Generation & deviation_wpd & -0.04* & 0.0 \\
+llama-3-70b-instruct & Wrong Candidate Generation & deviation_ld & -0.07* & 0.0 \\
+llama-3-70b-instruct & Textual Entailment & deviation_token_count & 0.05* & 0.0 \\
+llama-3-70b-instruct & Textual Entailment & deviation_wpd & 0.01 & 0.52 \\
+llama-3-70b-instruct & Textual Entailment & deviation_ld & 0.04* & 0.01 \\
+llama-3-70b-instruct & Answerability Classification & deviation_token_count & -0.1* & 0.0 \\
+llama-3-70b-instruct & Answerability Classification & deviation_wpd & -0.1* & 0.0 \\
+llama-3-70b-instruct & Answerability Classification & deviation_ld & -0.11* & 0.0 \\
+llama-3-70b-instruct & Text Matching & deviation_token_count & 0.07* & 0.0 \\
+llama-3-70b-instruct & Text Matching & deviation_wpd & 0.05* & 0.0 \\
+llama-3-70b-instruct & Text Matching & deviation_ld & 0.06* & 0.0 \\
+llama-3-70b-instruct & Information Extraction & deviation_token_count & -0.06* & 0.0 \\
+llama-3-70b-instruct & Information Extraction & deviation_wpd & -0.05* & 0.0 \\
+llama-3-70b-instruct & Information Extraction & deviation_ld & -0.04* & 0.0 \\
+llama-3-70b-instruct & Textual Entailment & deviation_token_count & -0.03 & 0.07 \\
+llama-3-70b-instruct & Textual Entailment & deviation_wpd & -0.05* & 0.01 \\
+llama-3-70b-instruct & Textual Entailment & deviation_ld & -0.05* & 0.01 \\
+llama-3-70b-instruct & Text Quality Evaluation & deviation_token_count & 0.01 & 0.62 \\
+llama-3-70b-instruct & Text Quality Evaluation & deviation_wpd & -0.01 & 0.27 \\
+llama-3-70b-instruct & Text Quality Evaluation & deviation_ld & -0.01 & 0.71 \\
+llama-3-70b-instruct & Textual Entailment & deviation_token_count & 0.0 & 0.91 \\
+llama-3-70b-instruct & Textual Entailment & deviation_wpd & -0.0 & 0.98 \\
+llama-3-70b-instruct & Textual Entailment & deviation_ld & -0.0 & 0.98 \\
+llama-3-70b-instruct & Named Entity Recognition & deviation_token_count & 0.05* & 0.0 \\
+llama-3-70b-instruct & Named Entity Recognition & deviation_wpd & 0.06* & 0.0 \\
+llama-3-70b-instruct & Named Entity Recognition & deviation_ld & 0.05* & 0.0 \\
+llama-3-70b-instruct & Dialogue Generation & deviation_token_count & -0.14* & 0.0 \\
+llama-3-70b-instruct & Dialogue Generation & deviation_wpd & -0.14* & 0.0 \\
+llama-3-70b-instruct & Dialogue Generation & deviation_ld & -0.1* & 0.0 \\
+llama-3-70b-instruct & Sentiment Analysis & deviation_token_count & 0.04* & 0.01 \\
+llama-3-70b-instruct & Sentiment Analysis & deviation_wpd & 0.03* & 0.03 \\
+llama-3-70b-instruct & Sentiment Analysis & deviation_ld & 0.02 & 0.18 \\
+llama-3-70b-instruct & Text Matching & deviation_token_count & 0.02 & 0.09 \\
+llama-3-70b-instruct & Text Matching & deviation_wpd & 0.03* & 0.04 \\
+llama-3-70b-instruct & Text Matching & deviation_ld & 0.04* & 0.0 \\
+llama-3-70b-instruct & Unknown Category & deviation_token_count & 0.03* & 0.01 \\
+llama-3-70b-instruct & Unknown Category & deviation_wpd & 0.01 & 0.43 \\
+llama-3-70b-instruct & Unknown Category & deviation_ld & 0.0 & 0.75 \\
+llama-3-70b-instruct & Program Execution & deviation_token_count & -0.01 & 0.45 \\
+llama-3-70b-instruct & Program Execution & deviation_wpd & 0.0 & 0.89 \\
+llama-3-70b-instruct & Program Execution & deviation_ld & -0.01 & 0.61 \\
+llama-3-70b-instruct & Question Rewriting & deviation_token_count & -0.0 & 0.89 \\
+llama-3-70b-instruct & Question Rewriting & deviation_wpd & 0.06* & 0.0 \\
+llama-3-70b-instruct & Question Rewriting & deviation_ld & 0.03* & 0.02 \\
+llama-3-70b-instruct & Sentence Composition & deviation_token_count & 0.15* & 0.0 \\
+llama-3-70b-instruct & Sentence Composition & deviation_wpd & 0.15* & 0.0 \\
+llama-3-70b-instruct & Sentence Composition & deviation_ld & 0.18* & 0.0 \\
+llama-3-70b-instruct & Unknown Category & deviation_token_count & 0.02 & 0.11 \\
+llama-3-70b-instruct & Unknown Category & deviation_wpd & 0.04* & 0.01 \\
+llama-3-70b-instruct & Unknown Category & deviation_ld & 0.07* & 0.0 \\
+llama-3-70b-instruct & Text Categorization & deviation_token_count & -0.08* & 0.0 \\
+llama-3-70b-instruct & Text Categorization & deviation_wpd & -0.07* & 0.0 \\
+llama-3-70b-instruct & Text Categorization & deviation_ld & -0.08* & 0.0 \\
+llama-3-70b-instruct & Text Completion & deviation_token_count & 0.01 & 0.36 \\
+llama-3-70b-instruct & Text Completion & deviation_wpd & 0.06* & 0.0 \\
+llama-3-70b-instruct & Text Completion & deviation_ld & -0.04* & 0.01 \\
+llama-3-70b-instruct & Text Categorization & deviation_token_count & 0.06* & 0.0 \\
+llama-3-70b-instruct & Text Categorization & deviation_wpd & 0.06* & 0.0 \\
+llama-3-70b-instruct & Text Categorization & deviation_ld & 0.06* & 0.0 \\
+llama-3-70b-instruct & Question Answering & deviation_token_count & 0.11* & 0.0 \\
+llama-3-70b-instruct & Question Answering & deviation_wpd & 0.11* & 0.0 \\
+llama-3-70b-instruct & Question Answering & deviation_ld & 0.12* & 0.0 \\
+\bottomrule
+\end{tabular}
+\end{table}
