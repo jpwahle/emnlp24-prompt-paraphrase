@@ -1,7 +1,7 @@
 # Paraphrase Types Elicit Prompt Engineering Capabilities
 [![arXiv](https://img.shields.io/badge/arXiv-2310.14863-b31b1b.svg)](https://arxiv.org/abs/2310.14863)
 
-![Under Construction](./under-construction.png)
+![Under Construction](./teaser_method.png)
 
 ## Overview
 This repository provides the implementation of the paper "Paraphrase Types Elicit Prompt Engineering Capabilities".
